@@ -23,9 +23,17 @@ class Control:
         
     def sub(self, a, b):
         return a-b
+    
     def mul(self, a, b):
         return a*b
+    
     def div(self, a, b):
         return a/b
+    
     def pow(self, a, b):
-        return pow(a, b)
+        try:
+           if (a==0):
+                raise Exception("Base Error")
+        
+        return pow(a, b)   
+    

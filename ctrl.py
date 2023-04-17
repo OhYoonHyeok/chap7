@@ -23,16 +23,19 @@ class Control:
         
     def sub(self, a, b):
         return a-b
+    
     def mul(self, a, b):
         return a*b
+    
     def div(self, a, b):
+        return a/b
+    
+    def pow(self, a, b):
         try:
-            if(b==0):
-                raise Exception("Divisor Error")
+           if (a==0):
+                raise Exception("Base Error")
             
         except Exception as e:
             return e
         
-        return a/b
-    def pow(self, a, b):
-        return pow(a, b)
+        return pow(a, b) 
